@@ -19,8 +19,11 @@ pip pip install python-nmap
 ```
 
 Una vez descargado todo procedemos a obtener nuestra ip que vamos a escanear con el siguiente comando:  
-Esto lo ponemos en la terminal y lo ejecutamos con sudo (-sn es para que nos muestre las direccion ip sin puertos).
+Esto lo ponemos en la terminal para obtener nuestra direccion ip que usaremos para escanear
 
 ```bash
-sudo nmap -sn 192.168.0.1/24
+ip route | grep default
 ```
+
+Nos dara una direccion ip en este caso es `192.168.0.0`.  
+Ahora nos iremos a nuestro programa y cambiamos el valor de nuestra variable `network_to_scan` y le agregamos la direccion que obtuvimos `192.168.0.1/24` y le agregamos que muestre las direccion ip en el rango 24 que nmap escaneará.
