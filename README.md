@@ -35,3 +35,6 @@ Activamos el entorno virtual con `source bin/activate`.
 En la terminal ejecutamos el programa con sudo python3 scan.py.  
 Esto nos dejara una direccion `localhost:5000` y pegamos esta direccion en nuestro navegador.
 ![alt text](/assets/image.png)
+
+Dependiendo de nuestra red nos mostrara las direccion activas e inactivas.  
+![alt text](image-1.png)
