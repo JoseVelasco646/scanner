@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultado de Ping</title>
+  </head>
+  <body>
+    <h1>Resultado de Ping</h1>
+    {% if success %}
+    <p>Ping exitoso:</p>
+    <pre>{{ output }}</pre>
+    {% else %}
+    <p>Error al hacer ping:</p>
+    <pre>{{ output }}</pre>
+    {% endif %}
+    <a href="/">Volver</a>
+  </body>
+</html>
