@@ -27,3 +27,11 @@ ip route | grep default
 
 Nos dara una direccion ip en este caso es `192.168.0.0`.  
 Ahora nos iremos a nuestro programa y cambiamos el valor de nuestra variable `network_to_scan` y le agregamos la direccion que obtuvimos `192.168.0.1/24` y le agregamos que muestre las direccion ip en el rango 24 que nmap escaneará.
+
+## Ejecutar programa
+
+Para ejecutar el programa tendremos que crear un entorno virtual.  
+Activamos el entorno virtual con `source bin/activate`.  
+En la terminal ejecutamos el programa con sudo python3 scan.py.  
+Esto nos dejara una direccion `localhost:5000` y pegamos esta direccion en nuestro navegador.
+![alt text](/assets/image.png)
