@@ -13,7 +13,7 @@ def ping_device(ip):
 
 @app.route('/')
 def index():
-    network_to_scan = '192.168.0.1/24'  
+    network_to_scan = '40.10.7.254/21'  
     nm = nmap.PortScanner()
     scan_result = nm.scan(hosts=network_to_scan, arguments='-sn')
     
